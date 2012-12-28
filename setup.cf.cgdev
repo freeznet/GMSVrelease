@@ -28,6 +28,15 @@ acservport=7890
 ############################# Version file
 version_conf=version.conf
 
+####EXP Settings#经验设置#######
+################################ Exp rate 战斗经验倍率
+exprate=1
+################################ battle skill exp rate 战斗技能经验倍率
+battleskillexprate=1
+################################ product skill exp rate 生产采集技能经验倍率
+productskillexprate=1
+################################
+
 ################################ Socket TCP_NODELAY mode
 nodelay=1
 ################################ CharSave interval
