@@ -1410,7 +1410,7 @@ CREATE TABLE `tbl_guildmonster` (
   `81` int(15) NOT NULL DEFAULT '0',
   `82` int(15) NOT NULL DEFAULT '0',
   `83` int(15) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`guildID`)
+  PRIMARY KEY (`guildID`,`roomNumber`)
 ) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
