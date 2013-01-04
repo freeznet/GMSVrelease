@@ -34,7 +34,7 @@ CREATE TABLE `tbl_addressbook` (
   `ToGuildTitle` int(11) DEFAULT NULL,
   PRIMARY KEY (`CdKey`,`RegistNumber`),
   KEY `index` (`CdKey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_addressbook
@@ -59,7 +59,7 @@ CREATE TABLE `tbl_addressbook_bak` (
   `ToGuildTitle` int(11) DEFAULT NULL,
   PRIMARY KEY (`CdKey`,`RegistNumber`),
   KEY `index` (`CdKey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_addressbook_bak
@@ -401,7 +401,7 @@ CREATE TABLE `tbl_character` (
   KEY `index` (`CdKey`,`RegistNumber`),
   KEY `index2` (`JobAncestry`,`Debugger`),
   KEY `index3` (`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_character
@@ -743,7 +743,7 @@ CREATE TABLE `tbl_character_bak` (
   KEY `index` (`CdKey`,`RegistNumber`),
   KEY `index2` (`JobAncestry`,`Debugger`),
   KEY `index3` (`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_character_bak
@@ -1085,7 +1085,7 @@ CREATE TABLE `tbl_character_down` (
   KEY `index` (`CdKey`,`RegistNumber`),
   KEY `index2` (`JobAncestry`,`Debugger`),
   KEY `index3` (`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_character_down
@@ -1104,7 +1104,7 @@ CREATE TABLE `tbl_duelranking` (
   `CdKey` char(32) NOT NULL DEFAULT '',
   `RegistNumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_duelranking
@@ -1122,7 +1122,7 @@ CREATE TABLE `tbl_graduation` (
   `EnableFlg` char(30) DEFAULT NULL,
   `Key` char(30) DEFAULT NULL,
   `mode` char(30) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_graduation
@@ -1210,7 +1210,7 @@ CREATE TABLE `tbl_guild` (
   `commition31` tinyint(4) DEFAULT '0',
   `floorID` int(11) DEFAULT NULL,
   PRIMARY KEY (`guildID`,`CdKey`,`RegistNumber`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guild
@@ -1227,7 +1227,7 @@ CREATE TABLE `tbl_guilditembox` (
   `CdKey` char(30) DEFAULT NULL,
   `RegistNumber` char(30) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guilditembox
@@ -1246,7 +1246,7 @@ CREATE TABLE `tbl_guilditemboxpet` (
   `CdKey` char(32) DEFAULT NULL,
   `RegistNumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guilditemboxpet
@@ -1265,7 +1265,7 @@ CREATE TABLE `tbl_guilditemboxpet_bak` (
   `CdKey` char(32) DEFAULT NULL,
   `RegistNumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guilditemboxpet_bak
@@ -1282,7 +1282,7 @@ CREATE TABLE `tbl_guilditembox_bak` (
   `CdKey` char(30) DEFAULT NULL,
   `RegistNumber` char(30) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guilditembox_bak
@@ -1299,7 +1299,7 @@ CREATE TABLE `tbl_guildmember` (
   `titleNo` int(10) NOT NULL DEFAULT '0',
   `joinTime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`CdKey`,`RegistNumber`,`guildID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guildmember
@@ -1316,7 +1316,7 @@ CREATE TABLE `tbl_guildmember_bak` (
   `titleNo` int(10) NOT NULL DEFAULT '0',
   `joinTime` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`CdKey`,`RegistNumber`,`guildID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guildmember_bak
@@ -1411,7 +1411,7 @@ CREATE TABLE `tbl_guildmonster` (
   `82` int(15) NOT NULL DEFAULT '0',
   `83` int(15) NOT NULL DEFAULT '0',
   PRIMARY KEY (`guildID`,`roomNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guildmonster
@@ -1506,7 +1506,7 @@ CREATE TABLE `tbl_guildmonster_bak` (
   `82` int(15) NOT NULL DEFAULT '0',
   `83` int(15) NOT NULL DEFAULT '0',
   PRIMARY KEY (`guildID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guildmonster_bak
@@ -1540,7 +1540,7 @@ CREATE TABLE `tbl_guild_bak` (
   `Name` char(30) DEFAULT NULL,
   `Action` char(30) DEFAULT NULL,
   `MonsterNo` char(30) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_guild_bak
@@ -1645,7 +1645,7 @@ CREATE TABLE `tbl_item` (
   `ITEMDATAPLACENUMBER` int(11) unsigned DEFAULT NULL,
   `ITEM_SAVENUM` int(11) DEFAULT NULL,
   KEY `tbl_item` (`CdKey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_item
@@ -1749,7 +1749,7 @@ CREATE TABLE `tbl_item_bak` (
   `RegistNumber` int(11) DEFAULT NULL,
   `ITEMDATAPLACENUMBER` int(11) unsigned DEFAULT NULL,
   `ITEM_SAVENUM` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_item_bak
@@ -1853,7 +1853,7 @@ CREATE TABLE `tbl_item_down` (
   `RegistNumber` int(11) DEFAULT NULL,
   `ITEMDATAPLACENUMBER` int(11) unsigned DEFAULT NULL,
   `ITEM_SAVENUM` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_item_down
@@ -1871,7 +1871,7 @@ CREATE TABLE `tbl_lock` (
   `CdKey` char(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`CdKey`),
   KEY `index` (`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_lock
@@ -1986,7 +1986,7 @@ CREATE TABLE `tbl_pet` (
   `unk102` int(11) DEFAULT NULL,
   KEY `index` (`RegistNumber`,`CdKey`,`OwnerCdKey`),
   KEY `index2` (`RegistNumber`,`CdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_pet
@@ -2099,7 +2099,7 @@ CREATE TABLE `tbl_pet_bak` (
   `RegistNumber` int(11) DEFAULT NULL,
   `Position` int(11) DEFAULT NULL,
   `unk102` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_pet_bak
@@ -2212,7 +2212,7 @@ CREATE TABLE `tbl_pet_down` (
   `RegistNumber` int(11) DEFAULT NULL,
   `Position` int(11) DEFAULT NULL,
   `unk102` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_pet_down
@@ -2228,7 +2228,7 @@ CREATE TABLE `tbl_playernum` (
   `trial-flg` char(30) DEFAULT NULL,
   `NewChar` char(30) DEFAULT NULL,
   PRIMARY KEY (`num`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_playernum
@@ -2245,7 +2245,7 @@ CREATE TABLE `tbl_product` (
   `LinkCdKey` char(30) DEFAULT NULL,
   `EnableFlg` char(30) DEFAULT NULL,
   `VerUpDate` char(30) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_product
@@ -2263,7 +2263,7 @@ CREATE TABLE `tbl_puk2` (
   `EnableFlg` char(30) DEFAULT NULL,
   `VerUpDate` char(30) DEFAULT NULL,
   PRIMARY KEY (`LinkCdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_puk2
@@ -2281,7 +2281,7 @@ CREATE TABLE `tbl_puk3` (
   `EnableFlg` char(30) DEFAULT NULL,
   `VerUpDate` char(30) DEFAULT NULL,
   PRIMARY KEY (`LinkCdKey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_puk3
@@ -2301,7 +2301,7 @@ CREATE TABLE `tbl_skill` (
   `SeqNo` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Cdkey`,`RegistNumber`,`SkillNum`),
   KEY `index` (`Cdkey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of tbl_skill
@@ -2320,7 +2320,7 @@ CREATE TABLE `tbl_skillpopulation` (
   `SkillExp` int(11) DEFAULT NULL,
   `SeqNo` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cdkey`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_skillpopulation
@@ -2340,7 +2340,7 @@ CREATE TABLE `tbl_skill_bak` (
   `SeqNo` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Cdkey`,`RegistNumber`,`SkillNum`),
   KEY `index` (`Cdkey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of tbl_skill_bak
@@ -2360,7 +2360,7 @@ CREATE TABLE `tbl_skill_down` (
   `SeqNo` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Cdkey`,`RegistNumber`,`SkillNum`),
   KEY `index` (`Cdkey`,`RegistNumber`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312 ROW_FORMAT=FIXED;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
 
 -- ----------------------------
 -- Records of tbl_skill_down
@@ -2383,8 +2383,25 @@ CREATE TABLE `tbl_user` (
   `CdKey` char(32) DEFAULT NULL,
   `IP` char(15) DEFAULT NULL,
   PRIMARY KEY (`AccountID`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `tbl_globalregvalue`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_globalregvalue`;
+CREATE TABLE `tbl_globalregvalue` (
+  `account_id` varchar(64) NOT NULL DEFAULT '',
+  `str` varchar(32) NOT NULL DEFAULT '',
+  `value` varchar(255) NOT NULL DEFAULT '',
+  `type` int(11) NOT NULL DEFAULT '0',
+  `data_place` int(11) NOT NULL DEFAULT '0',
+  `reg_num` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`account_id`,`str`,`data_place`,`reg_num`)
+) ENGINE=MyISAM DEFAULT CHARSET=gbk;
+-- ----------------------------
+-- Records of tbl_globalregvalue
 -- ----------------------------
